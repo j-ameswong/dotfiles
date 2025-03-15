@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Sway on NVIDIA
+Comment=Sway compositor with NVIDIA settings
+Exec=/home/contessa/.config/sway/start-sway.sh
+Type=Application
