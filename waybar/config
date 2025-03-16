@@ -49,7 +49,7 @@
             "enabled": "",
             "disabled": ""
         },
-        "on-click": "blueman-manager"
+        "on-click": "kitty -e bluetui"
     },    
     "sway/language": {
         "format": "<big></big> {}",

@@ -4,6 +4,9 @@
 #
 # Read `man 5 sway` for a complete reference.
 
+# Autostart
+exec dex --autostart --search-paths $HOME/.config/autostart
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -288,14 +291,19 @@ exec export WLR_NO_HARDWARE_CURSORS=1
 exec export GBM_BACKEND=nvidia-drm
 exec export __GLX_VENDOR_LIBRARY_NAME=nvidia
 exec export MOZ_ENABLE_WAYLAND=1
-include /etc/sway/config.d/*
+exec export PATH="${PATH}:${HOME}.local/share/gem/ruby/3.3.0/bin"
+exec export PATH="${PATH}:XDG_CACHE_HOME=$HOME/.cache"
+exec export PATH="${PATH}:XDG_CONFIG_HOME=$HOME/.config"
+exec export PATH="${PATH}:XDG_DATA_HOME=$HOME/.local/share"
+exec export PATH="${PATH}:XDG_STATE_HOME=$HOME/.local/state"
 
 # VPN
 exec nordvpn connect
 
 # fcitx5 for Chinese PinYin input
-exec fcitx5
 exec export QT_IM_MODULE=fcitx
 
 # Status bar
 exec waybar
+
+include /etc/sway/config.d/*

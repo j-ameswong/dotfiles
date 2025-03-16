@@ -2,7 +2,6 @@ base
 base-devel
 bat
 bc
-blueman
 bluetui
 bluez
 bluez-utils
@@ -13,6 +12,7 @@ cava
 cliphist
 code
 composer
+dex
 dotnet-runtime
 dotnet-sdk
 efibootmgr

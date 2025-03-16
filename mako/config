@@ -8,13 +8,13 @@
 #   man 5 mako
 # To view all configuration options.
 
-font=monospace 9
+font=Cantarell Normal 9
 format=<b>%a ⏵</b> %s\n%b
 sort=-time
 output=DP-2
 layer=overlay
 anchor=top-right
-background-color=#32326998
+background-color=#434C5EDD
 width=300
 height=110
 margin=15
