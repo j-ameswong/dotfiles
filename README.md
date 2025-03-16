@@ -1,14 +1,13 @@
+![image](./images/preview.png)
 # Complete Sway Desktop Environment Setup Guide
 
-This document outlines the (mostly) complete process of setting up my Sway WM-based DE on Arch Linux, from installation to configuration and customization.
+This document outlines the (mostly) complete process of setting up my minimal [Sway](https://github.com/swaywm/sway)-based DE on Arch Linux, from installation to configuration and customization.
+A lot of the settings are specific to NVIDIA GPUs, so use common sense when applying commands.
 
 ## Table of Contents
 - [System Installation](#system-installation)
-- [Base System Setup](#base-system-setup)
-- [Display Manager Installation](#display-manager-installation)
-- [Sway Window Manager Setup](#sway-window-manager-setup)
-- [Audio Setup](#audio-setup)
-- [Bluetooth Configuration](#bluetooth-configuration)
+- [Display Manager Installation](#display-manager-installation-and-configuration)
+- [Desktop Environment](#desktop-environment)
 - [Development Environment](#development-environment)
 - [Fonts and Themes](#fonts-and-themes)
 - [Input Method Configuration](#input-method-configuration)
@@ -263,7 +262,7 @@ systemctl enable sddm
 <a href="">Eucalyptus Drop Theme</a> instructions for theme install and dependencies, 
 but use the folder in my repository instead, under `dotfiles/eucalyptus-drop`.
 
-## Sway Window Manager Setup
+## Desktop Environment
 
 Install Sway and its core components:
 
@@ -386,7 +385,8 @@ pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
           ttf-dejavu ttf-liberation ttf-jetbrains-mono-nerd ttf-font-awesome
           font-manager
 ```
-Then, use font-manager > Hamburger menu top right > Preferences > Desktop > Set all 3 font types as you wish
+Then, use font-manager > Hamburger menu top right > Preferences > Desktop > Set all 3 font types as you wish.
+I personally use Cantarell and JetBrains Mono Nerd.
 <br>
 <hr>
 
@@ -476,6 +476,8 @@ You should get the following setup if you copied the files and followed the guid
 this point:
 
 ![image](./images/preview.png)
+![image](./images/dmenu.png)
+![image](./images/clipboard.png)
 *a simple no nonsense setup*
 
 ### Fuzzel Configuration:
